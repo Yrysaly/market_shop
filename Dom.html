@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Manipulation</title>
+</head>
+<body>
+    <h1 id="title">Бастапқы тақырып</h1>
+    <p id="paragraph">Бұл бастапқы мәтін.</p>
+    
+    <script>
+        // Элементтерді таңдау
+        let title = document.getElementById("title");
+        let paragraph = document.getElementById("paragraph");
+        
+        // Мазмұнды өзгерту
+        title.innerHTML = "<i>Жаңартылған тақырып!</i>";
+        paragraph.textContent = "<i>Бұл жаңартылған мәтін.</i>";
+        </script>
+        </body>
+        </html>

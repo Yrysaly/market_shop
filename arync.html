@@ -1,0 +1,31 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Timer UI</title>
+  <link rel="stylesheet" href="arync.css">
+</head>
+<body>
+  <div class="timer">
+    <div class="controls">
+      <button id="reset">RESET</button>
+      <div>
+        <span id="hours">00</span> : 
+        <span id="minutes">00</span> : 
+        <span id="seconds">oo</span>
+      </div>
+      <button id="done">DONE</button>
+    </div>
+    <div class="buttons">
+      <button onclick="changeTime(-1)">-</button>
+      <button onclick="toggleTimer()" id="startBtn">▶</button>
+      <button onclick="changeTime(1)">+</button>
+    </div>
+  </div>
+  <script src="arync.js"></script>
+</body>
+</html>

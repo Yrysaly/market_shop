@@ -1,0 +1,43 @@
+body {
+    font-family: sans-serif;
+    background: #f0f0f0;
+    margin: 0;
+  }
+  
+  .register-container {
+    background: white;
+    max-width: 400px;
+    margin: 100px auto;
+    padding: 2em;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  }
+  
+  .register-container h2 {
+    text-align: center;
+  }
+  
+  .register-container label {
+    display: block;
+    margin-top: 1em;
+  }
+  
+  .register-container input {
+    width: 100%;
+    padding: 0.5em;
+    margin-top: 0.3em;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  .register-container button {
+    margin-top: 1.5em;
+    width: 100%;
+    padding: 0.7em;
+    background: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  

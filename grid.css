@@ -1,0 +1,81 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 100px);
+    gap: 10px;
+  }
+  
+  .grid-item {
+    background-color: #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+
+  .blog-layout {
+    display: grid;
+    grid-template-areas:
+      "header header"
+      "sidebar content"
+      "footer footer";
+    grid-template-columns: 200px 1fr;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
+    gap: 10px;
+  }
+  
+  .header {
+    grid-area: header;
+    background-color: #ffcccc;
+    padding: 20px;
+  }
+  
+  .sidebar {
+    grid-area: sidebar;
+    background-color: #ccffcc;
+    padding: 20px;
+  }
+  
+  .content {
+    grid-area: content;
+    background-color: #ccccff;
+    padding: 20px;
+  }
+  
+  .footer {
+    grid-area: footer;
+    background-color: #ffffcc;
+    padding: 20px;
+  }
+
+  /* Қателі нұсқа */
+.container {
+    display: block; /* Қате: grid емес */
+  }
+  
+  .item1 {
+    grid-area: head; /* Қате: grid-template-areas-да жоқ */
+  }
+  
+  .item2 {
+    margin: 10px; /* Қате: аралық үшін gap қолдану керек */
+  }
+  
+  /* Түзетілген нұсқа */
+  .container {
+    display: grid;
+    grid-template-areas:
+      "header header"
+      "sidebar main"
+      "footer footer";
+    gap: 10px;
+  }
+  
+  .item1 {
+    grid-area: header;
+  }
+  
+  .item2 {
+    grid-area: sidebar;
+  }

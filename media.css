@@ -1,0 +1,27 @@
+.card {
+    width: 250px;
+    height: 250px;
+    background-color: green;
+    border: 1px solid black;
+    text-align: center;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+@media (max-width: 768px) {
+    .container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+}
+img{
+    width: 200px;
+    height: 200px;
+    border: 10px solid black;
+    
+}

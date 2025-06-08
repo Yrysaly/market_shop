@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Stages Sign Up</title>
+  <style>
+    body { font-family: sans-serif; display: flex; margin: 0; height: 100vh; }
+    .left, .right { flex: 1; padding: 40px; }
+    .left { background: #fff; }
+    .right { background: #005bff; color: white; display: flex; align-items: center; justify-content: center; flex-direction: column; }
+    input, button { display: block; margin: 10px 0; padding: 10px; width: 100%; max-width: 300px; }
+  </style>
+  <style>
+    body {
+      margin: 0;
+      font-family: sans-serif;
+      display: flex;
+      height: 100vh;
+    }
+  
+    .left {
+      flex: 1;
+      background-color: #ffffff;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 40px;
+    }
+  
+    .right {
+      flex: 1;
+      background: linear-gradient(135deg, #005bff, #007bff);
+      color: white;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 40px;
+      position: relative;
+      overflow: hidden;
+    }
+  
+    .right::before {
+      content: '';
+      position: absolute;
+      width: 100px;
+      height: 100px;
+      background: #ffc107;
+      top: 50px;
+      left: 50px;
+      transform: rotate(45deg);
+      opacity: 0.6;
+    }
+  
+    .right::after {
+      content: '';
+      position: absolute;
+      width: 80px;
+      height: 80px;
+      background: #ffffff;
+      bottom: 30px;
+      right: 40px;
+      transform: rotate(-20deg);
+      opacity: 0.3;
+    }
+  </style>
+</head>
+<body>
+  <div class="left">
+    <h2>Sign up</h2>
+    <input type="text" placeholder="First name"/>
+    <input type="text" placeholder="Last name"/>
+    <input type="email" placeholder="Email"/>
+    <input type="password" placeholder="Password"/>
+    <button>Sign up</button>
+    <p>Already a member? <a href="#">Sign in</a></p>
+  </div>
+  <div class="right">
+    <h1>Explore your creativity</h1>
+    <p>Join a creative community</p>
+  </div>
+</body>
+
+</html>

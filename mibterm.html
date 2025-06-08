@@ -1,0 +1,37 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Мәліметтер формасы</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="mibterm.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Жеке Ақпарат Панелі</h1>
+    <form id="dataForm">
+      <label>Аты-жөні: <input type="text" id="name" required></label>
+      <label>Email: <input type="email" id="email" required></label>
+      <label>Туған күні: <input type="date" id="dob" required></label>
+      <label>Фон түсі: <input type="color" id="bgcolor"></label>
+      <button type="submit">Жіберу</button>
+    </form>
+
+    <table id="dataTable" style="display: none;">
+      <thead>
+        <tr><th>Аты-жөні</th><th>Email</th><th>Туған күні</th></tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </div>
+
+  <footer>
+    <p>"Оқу – өмірдің шамшырағы"</p>
+  </footer>
+
+  <script src="mibterm.js"></script>
+</body>
+</html>

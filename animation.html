@@ -1,0 +1,57 @@
+<style>
+    .box {
+      width: 100px;
+      height: 100px;
+      background-color: green;
+      transition: background-color 1s ease-in-out;
+    }
+  
+    .box:hover {
+      background-color: red;
+    }
+  </style>
+  
+  <div class="box"></div>
+
+  <style>
+    @keyframes scaleBtn {
+      0% { transform: scale(1); }
+      50% { transform: scale(2.8); }
+      100% { transform: scale(1); }
+    }
+  
+    .btn {
+      padding: 10px 20px;
+      font-size: 16px;
+    }
+  
+    .btn:active {
+      animation: scaleBtn 0.5s;
+    }
+  </style>
+  
+  <button class="btn">Мені бас </button><style>
+    @keyframes complexAnim {
+      0% {
+        transform: translate(0, 0);
+        background-color: initial;
+      }
+      50% {
+        transform: translate(0, 100px);
+      }
+      100% {
+        transform: translate(200px, 100px);
+        background-color: blue;
+      }
+    }
+  
+    .animated-box {
+      width: 100px;
+      height: 100px;
+      background-color: green;
+      animation: complexAnim 4s infinite;
+    }
+  </style>
+  
+  <div class="animated-box"></div>
+

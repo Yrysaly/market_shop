@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mini Shop</title>
+  <link rel="stylesheet" href="GroceryStore.css"/> 
+</head>
+<body>
+  <header>
+    <h1>🛒 Mini Shop</h1>
+    <div id="cart">
+      🛍️ Корзина: <span id="cart-count">0</span>
+    </div>
+  </header>
+  <div class="container">
+    <h2>Регистрация</h2>
+    <form id="registerForm">
+      <input type="text" id="name" placeholder="Ваше имя" required />
+      <input type="email" id="email" placeholder="Email" required />
+      <input type="password" id="password" placeholder="Пароль" required />
+      <input type="password" id="confirmPassword" placeholder="Повторите пароль" required />
+      <button type="submit">Зарегистрироваться</button>
+    </form>
+    <p id="message"></p>
+  </div>
+  <div class="product" data-name="Хлеб" data-price="30">
+    <h3>Хлеб</h3>
+    <p>Цена: 30 </p>
+    <button class="add-to-cart">В корзину</button>
+  </div>
+
+  <div class="product" data-name="Молоко" data-price="70">
+    <h3>Молоко</h3>
+    <p>Цена: 70</p>
+    <button class="add-to-cart">В корзину</button>
+  </div>
+</div>
+ 
+<h2>Корзина</h2>
+<div id="cart"></div>
+<p><strong>Итого: <span id="total">0</span>$</strong></p>
+
+  <section class="products">
+    <div class="product">
+      <img src="https://www.almudi.org/Portals/0/Imagenes/Articulos2014/ManzanaZZ.jpg" alt="Яблоко" />
+      <p>🍎 Яблоко</p>
+      <button onclick="addToCart('Яблоко')">Добавить</button>
+    </div>
+    <div class="product">
+      <img style="width: 236px; height: 236px;" src="https://images.steamusercontent.com/ugc/2486630559361752369/714BBD8793B7D10926E02C7A88E528973900A320/" alt="Банан">
+      <p>🍌 Банан</p>
+      <button onclick="addToCart('Банан')">Добавить</button>
+    </div>
+    <div class="product">
+      <img style="width: 236px; height: 236px;"src="https://i.pinimg.com/originals/bc/4f/14/bc4f146c12a47874d75e5477bda70d10.jpg" alt="">
+      <p>🍓 Клубника</p>
+      <button onclick="addToCart('Клубника')">Добавить</button>
+    </div>
+  </section>
+
+  <script src="GroceryStore.js"></script> 
+</body>
+</html>
